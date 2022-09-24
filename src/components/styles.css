@@ -1,0 +1,173 @@
+.home{
+    display: flex;
+}
+
+.productContainer{
+    display: flex;
+    width: 78%;
+    padding: 20px;
+    flex-wrap: wrap;
+   
+}
+
+.filters{
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 10px;
+    height: 41vw;
+}
+
+.filters > span {
+    padding-bottom: 20px;
+   
+}
+input[type="radio"]{
+cursor: pointer;
+}
+input[type="checkbox"]{
+cursor: pointer;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.products {
+    width: 30%;
+    margin: 10px;
+}
+
+.cartItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid blue;
+    text-align: left !important;
+}
+
+.cartItemImg{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cartItemDetail{
+   text-align: left;
+    padding: 0 20px;
+    width: 60%;
+}
+
+.empty{
+    padding-left: 20px;
+}
+.delete{
+   
+    cursor: pointer;
+}
+.delete:hover{
+    color: red;
+}
+
+.summary{
+    width: 30%;
+}
+.row{
+    width: 200%;
+}
+.list-group {
+    width:60%;
+    margin-left: 150px;
+    padding: 50px -150px 50px -150px;
+}
+
+.listEmpty{
+    font-size: 9vw;
+}
+
+
+/* Responsove Design */
+
+
+@media only screen and (max-width: 1280px){
+    .filters{
+        height: 100%;
+    }
+    .btn-success{
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width:820px){
+   .list-group-item{
+    width: 150%;
+   }
+   .list-group{
+    margin-left: 0px;
+   }
+    .products{
+        width: 45%;
+    }
+   .form-control{
+    width: 100% !important;
+   }
+   .filters{
+    width: 40%;
+   }
+   .rounded{
+    width: 70px;
+   }
+}
+
+@media only screen and (max-width:768px){
+    .productContainer{
+        padding: 0;
+    }
+    .products{
+        width: 100%;
+    }
+    .filters{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:540px){
+    .btn-success{
+        margin-left: 50px;
+        margin-right: 45px !important;
+    }
+    
+    .form-control{
+        width: 100% !important;
+       }
+       .navbar-nav{
+        margin-right: 0px !important;
+       }
+}
+@media only screen and (max-width:414px){
+    .form-control{
+        width: 170% !important;
+       
+       }
+       .summary{
+        z-index: 100;
+       
+       }
+}
+
+@media only screen and (max-width:375px){
+    .form-control{
+        width: 170% !important;
+       display: none !important;
+       }
+       .filters{
+       margin: 0px;
+       width: 70% !important;
+       }
+}
